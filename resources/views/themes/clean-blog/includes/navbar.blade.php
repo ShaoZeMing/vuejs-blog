@@ -15,7 +15,7 @@
             <ul class="nav navbar-nav navbar-right">
                 @foreach(\App\Category::all() as $category)
                     <li>
-                        <a href="{{route('web.category', $category->name)}}">{{$category->name}}</a>
+                        <a href="{{route('web.category', $category->hashid)}}">{{$category->name}}</a>
                     </li>
                 @endforeach
             </ul>

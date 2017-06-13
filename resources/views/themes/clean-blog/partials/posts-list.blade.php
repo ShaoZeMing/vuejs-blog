@@ -7,7 +7,7 @@
 @endif
 @foreach($posts as $post)
     <div class="post-preview">
-        <a href="{{route('web.post', $post->slug)}}">
+        <a href="{{route('web.post', $post->hashid)}}">
             <h2 class="post-title">
                 {{ $post->title }}
             </h2>
