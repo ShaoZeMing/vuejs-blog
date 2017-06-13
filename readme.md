@@ -1,11 +1,12 @@
 # Vuedo ![logo](http://i.imgur.com/iBEAx7O.png?2)
 [![Build Status](https://travis-ci.org/Vuedo/vuedo.svg?branch=master)](https://travis-ci.org/Vuedo/vuedo) [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE) [![Join the chat at https://gitter.im/vuedo/Lobby](https://badges.gitter.im/vuedo/Lobby.svg)](https://gitter.im/vuedo/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## What is Vuedo?
+## What is Vuejs-blog?
 
+This is copy  [@vuedo](https://twitter.com/vuedo) on Twitter
 Vuedo is an open source project built with Laravel and Vue.js. It is a live example of how everything works together.
 
-## Website using Vuedo in production : [https://vuejsfeed.com/](https://vuejsfeed.com/)
+## Website using vuejs-blog in production : [https://vuejsfeed.com/](https://blog.4d4k.com/)
 
 Vue.js Feed is a place where News, Tutorials, Plugins, Showcases and more things regarding Vue are handpicked and shared with the community.
 
