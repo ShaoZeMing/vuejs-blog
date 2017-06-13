@@ -11,7 +11,7 @@ class UsersProductionSeeder extends Seeder
      */
     public function run()
     {
-        $admin = factory(App\User::class, 'admin')->create(['email' => 'first@admin.com']);
-        $this->command->info("New Admin created. Username: $admin->email,  Password: 123pass");
+        $admin = factory(App\User::class, 'admin')->create(['email' => 'szm19920426@gmail.com','password'=>bcrypt(123123)]);
+        $this->command->info("New Admin created. Username: $admin->email,  Password: 123123");
     }
 }
