@@ -8,9 +8,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Vuedo</h1>
+                        <h1>子非鱼</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">一个干净的博客主题</span>
                     </div>
                 </div>
             </div>

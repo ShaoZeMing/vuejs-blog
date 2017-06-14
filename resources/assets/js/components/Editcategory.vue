@@ -2,20 +2,20 @@
   <!-- Horizontal Form -->
 <div class="box box-info">
   <div class="box-header with-border">
-    <h3 class="box-title">Edit Category</h3>
+    <h3 class="box-title">编辑分类</h3>
   </div>
   <!-- /.box-header -->
   <!-- form start -->
   <form @keydown.enter.prevent="deleteCategory" class="form-horizontal">
     <div class="box-body">
       <div class="form-group">
-        <label for="title" class="col-sm-1 control-label">Title</label>
+        <label for="title" class="col-sm-1 control-label">标题</label>
         <div class="col-sm-11">
           <input type="text" class="form-control" id="title" placeholder="title" v-model="category.name">
         </div>
       </div>
       <div class="form-group">
-        <label for="icon" class="col-sm-1 control-label">Icon</label>
+        <label for="icon" class="col-sm-1 control-label">图标</label>
         <div class="col-sm-11">
           <input class="form-control" id="icon" placeholder="fa fa-icon" v-model="category.icon">
         </div>
@@ -23,8 +23,8 @@
     </div>
     <!-- /.box-body -->
     <div class="box-footer">
-      <button class="btn btn-flat btn-info pull-right" @click="updateCategory(category)">Save category</button>
-      <button class="btn btn-flat btn-danger" @click="deleteCategory(category)">Delete</button>
+      <button class="btn btn-flat btn-info pull-right" @click="updateCategory(category)">保存修改</button>
+      <button class="btn btn-flat btn-danger" @click="deleteCategory(category)">删除</button>
     </div>
     <!-- /.box-footer -->
   </form>

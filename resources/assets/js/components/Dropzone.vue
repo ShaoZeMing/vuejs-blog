@@ -13,7 +13,7 @@
                 <!-- The fileinput-button span is used to style the file input field as button -->
                 <button class="btn btn-warning btn-flat btn-block fileinput-button dz-clickable">
                     <i class="fa fa-edit"></i>
-                    <span>Update Image</span>
+                    <span>上传图片</span>
                 </button>
             </div>
         </div>
@@ -40,11 +40,11 @@
             <div>
                 <button class="btn btn-primary start">
                     <i class="fa fa-upload"></i>
-                    <span>Start</span>
+                    <span>开始</span>
                 </button>
                 <button data-dz-remove class="btn btn-warning cancel">
                     <i class="fa fa-remove"></i>
-                    <span>Cancel</span>
+                    <span>取消</span>
                 </button>
             </div>
         </div>

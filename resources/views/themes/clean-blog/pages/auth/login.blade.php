@@ -8,9 +8,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Vuedo Deluxe</h1>
+                        <h1>Login</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">一个干净的博客主题</span>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
       {{ csrf_field() }}
         <div class="row control-group">
             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} form-group col-xs-12 floating-label-form-group controls">
-              <label for="email">E-Mail Address</label>
+              <label for="email">邮箱</label>
               <input type="email" id="email" placeholder="E-mail Address *" class="form-control" name="email" value="{{ old('email') }}">
               @if ($errors->has('email'))
               <span class="help-block">
@@ -40,7 +40,7 @@
         </div>
         <div class="row control-group">
             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }} form-group col-xs-12 floating-label-form-group controls">
-              <label for="password">Password</label>
+              <label for="password">密码</label>
               <input id="password" type="password" class="form-control" name="password" placeholder="Password *">
               @if ($errors->has('password'))
               <span class="help-block">
@@ -52,16 +52,16 @@
         <br>
         <div class="row">
             <div class="form-group col-xs-12">
-              <input type="checkbox" name="remember"> Remember Me
+              <input type="checkbox" name="remember"> 记住我
             </div>
         </div>
 
         <div class="row">
             <div class="form-group col-xs-12">
                 <button type="submit" class="btn btn-default">
-                  <i class="fa fa-btn fa-sign-in"></i> Login
+                  <i class="fa fa-btn fa-sign-in"></i> 登陆
                 </button>
-                  <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
+                  <a class="btn btn-link" href="{{ url('/password/reset') }}">忘记密码</a>
             </div>
         </div>
 

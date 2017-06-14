@@ -6,5 +6,6 @@ return [
     'email' => 'team@vuejsfeed.com',
     'facebook_url' => '#',
     'twitter_username' => 'vuedo',
-    'twitter_url' => 'https://twitter.com/vuedo',
+    'twitter_url' => 'https://twitter.com/szm19920426',
+    'github_url' => 'https://github.com/shaozeming',
 ];

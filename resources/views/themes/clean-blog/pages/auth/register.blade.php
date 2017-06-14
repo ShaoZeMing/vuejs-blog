@@ -10,7 +10,7 @@
                     <div class="site-heading">
                         <h1>Vuedo Deluxe</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">一个干净的博客主题</span>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
       {{ csrf_field() }}
         <div class="row control-group">
             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }} form-group col-xs-12 floating-label-form-group controls">
-              <label for="email">E-Mail Address</label>
+              <label for="email">邮箱</label>
 
                   <input id="email" placeholder="E-mail Address *" type="email" class="form-control" name="email" value="{{ old('email') }}">
 
@@ -42,7 +42,7 @@
         </div>
         <div class="row control-group">
             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }} form-group col-xs-12 floating-label-form-group controls">
-              <label for="password">Password</label>
+              <label for="password">密码</label>
 
                   <input id="password" placeholder="Password *" type="password" class="form-control" name="password">
 
@@ -55,7 +55,7 @@
         </div>
         <div class="row control-group">
             <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }} form-group col-xs-12 floating-label-form-group controls">
-              <label for="password-confirm">Confirm Password</label>
+              <label for="password-confirm">确认密码</label>
 
                   <input id="password-confirm" placeholder="Password Confirmation *" type="password" class="form-control" name="password_confirmation">
 
@@ -71,7 +71,7 @@
         <div class="row">
             <div class="form-group col-xs-12">
                 <button type="submit" class="btn btn-default">
-                  <i class="fa fa-btn fa-user"></i> Register
+                  <i class="fa fa-btn fa-user"></i> 注册
                 </button>
             </div>
         </div>

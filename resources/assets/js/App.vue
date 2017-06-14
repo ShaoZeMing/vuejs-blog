@@ -8,7 +8,7 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Admin Panel
+          后台管理
           <small>Everything is here.</small>
         </h1>
       </section>

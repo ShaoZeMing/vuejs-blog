@@ -13,25 +13,25 @@
         <div class="pull-left info">
           <p>{{user.name}}</p>
           <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
         </div>
       </div>
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu">
-        <li><a v-link="{ path: '/' }"><i class="fa fa-home"></i> <span>Home</span></a></li>
+        <li><a v-link="{ path: '/' }"><i class="fa fa-home"></i> <span>首页</span></a></li>
         <!-- Optionally, you can add icons to the links -->
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-list"></i> <span>Posts</span> <i class="fa fa-angle-left pull-right"></i>
+            <i class="fa fa-list"></i> <span>文章管理</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a v-link="{ path: '/posts' }"><i class="fa fa-tasks"></i>Index</a></li>
-            <li><a @click="createPost" href="#"><i class="fa fa-keyboard-o"></i>Create post</a></li>
+            <li><a v-link="{ path: '/posts' }"><i class="fa fa-tasks"></i>文章列表</a></li>
+            <li><a @click="createPost" href="#"><i class="fa fa-keyboard-o"></i>新建文章</a></li>
           </ul>
         </li>
-        <li><a v-link="{ path: '/categories' }"><i class="fa fa-th-large"></i> <span>Categories</span></a></li>
-        <li><a v-link="{ path: '/users' }"><i class="fa fa-users"></i> <span>Users</span></a></li>
+        <li><a v-link="{ path: '/categories' }"><i class="fa fa-th-large"></i> <span>分类管理</span></a></li>
+        <li><a v-link="{ path: '/users' }"><i class="fa fa-users"></i> <span>用户管理</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>

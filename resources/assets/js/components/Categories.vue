@@ -1,19 +1,19 @@
 <template>
 <section class="content">
-  <h1>Categories</h1>
+  <h1>分类列表</h1>
   <button type="button" @click="createCategory" class="btn btn-lg btn-primary btn-flat" style="margin-bottom: 15px;">Add new category</button>
   <div class="row">
     <div class="col-xs-12">
       <div class="box">
         <div class="box-header">
-          <h3 class="box-title">All Categories</h3>
+          <h3 class="box-title">所有分类</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body table-responsive no-padding">
           <table class="table table-hover">
             <tr>
-              <th>Category Name</th>
-              <th>Icon</th>
+              <th>分类名称</th>
+              <th>图标</th>
             </tr>
             <tr v-for="category in categories">
               <td>
@@ -23,12 +23,12 @@
               <td class="col-sm-3">
                 <div class="btn-group">
                     <button type="button" v-link="{ name: 'postincats', params: {hashid: category.hashid}}" class="btn btn-success">
-                      View posts
+                      查看文章
                     </button>
                     <button type="button" v-link="{ name: 'categories', params: {hashid: category.hashid}}" class="btn btn-warning">
-                      Edit
+                      编辑
                     </button>
-                    <button class="btn btn-danger" @click="deleteCategory(category)">Delete</button>
+                    <button class="btn btn-danger" @click="deleteCategory(category)">删除</button>
                 </div>
               </td>
             </tr>

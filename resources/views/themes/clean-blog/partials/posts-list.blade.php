@@ -1,7 +1,7 @@
 @if( count($posts) == 0 )
     <div class="post-preview">
         <h2 class="post-title">
-            Whoops, there are no posts here yet :/
+            哎呀！没有数据 :/
         </h2>
     </div>
 @endif
@@ -15,7 +15,7 @@
                 {{ $post->description }}
             </h3>
         </a>
-        <p class="post-meta">Posted by <a href="#">{{$post->owner->name}}</a> {{$post->moderated_at->diffForHumans()}}</p>
+        <p class="post-meta">文章发布于<a href="#">{{$post->owner->name}}</a> {{$post->moderated_at->diffForHumans()}}</p>
     </div>
     <hr>
 @endforeach

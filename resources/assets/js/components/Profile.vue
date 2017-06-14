@@ -2,7 +2,7 @@
 <!-- general form elements -->
     <div class="box box-primary">
       <div class="box-header with-border">
-        <h3 class="box-title">Edit profile</h3>
+        <h3 class="box-title">修改用户</h3>
       </div>
       <!-- /.box-header -->
       <!-- form start -->
@@ -11,15 +11,15 @@
           <img class="profile-user-img img-responsive img-circle"
           :src="user.avatar" alt="User profile picture">
           <div class="form-group">
-            <label for="name">Name:</label>
+            <label for="name">名字:</label>
             <input v-model="user.name" class="form-control" name="name" placeholder="name">
           </div>
           <div class="form-group">
-            <label for="Username">Username:</label>
+            <label for="Username">昵称:</label>
             <input v-model="user.username" class="form-control" name="Username" placeholder="Username">
           </div>
           <div class="form-group">
-            <label for="Email">Email address:</label>
+            <label for="Email">邮箱:</label>
             <input v-model="user.email" type="email" class="form-control" name="Email" placeholder="Enter email">
           </div>
           <div class="form-group">
@@ -31,21 +31,21 @@
             <textarea v-model="user.bio" class="form-control" name="bio" rows="5" id="biography"></textarea>
           </div>
           <div class="form-group">
-            <label for="password">Current Password:</label>
+            <label for="password">旧密码:</label>
             <input v-model="user.password" type="password" class="form-control" name="password" placeholder="Password">
           </div>
           <div class="form-group">
-            <label for="new_password">New Password:</label>
+            <label for="new_password">新密码:</label>
             <input v-model="user.new_password" type="password" class="form-control" name="new_password" placeholder="New Password">
           </div>
           <div class="form-group">
-            <label for="new_password_confirmation">Confirm Password:</label>
+            <label for="new_password_confirmation">确认密码:</label>
             <input v-model="user.new_password_confirmation" type="password" class="form-control" name="new_password_confirmation" placeholder="Confirm Password">
           </div>
         </div>
         <!-- /.box-body -->
         <div class="box-footer">
-          <button @click="updateUser(user)" class="btn btn-primary btn-lg btn-flat">Submit</button>
+          <button @click="updateUser(user)" class="btn btn-primary btn-lg btn-flat">提交</button>
         </div>
       </form>
     </div>

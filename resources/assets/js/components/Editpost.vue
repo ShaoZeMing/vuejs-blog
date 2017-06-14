@@ -4,24 +4,24 @@
     <div class="row">
         <div class="col-md-12">
           <a v-if="post.status == 'approved'" href="/blog/{{post.slug}}" target="blank"  class="btn btn-lg btn-flat btn-success" role="button" style="margin-bottom: 15px;">
-            View Post
+            编辑文章
           </a>
             <div class="box box-info">
                 <div class="box-header">
-                    <h3 class="box-title">Post Editor
+                    <h3 class="box-title">文章编辑
                         <small>Markdown Editor</small>
                     </h3>
                 </div>
                 <div class="box-body pad">
                     <div class="form-horizontal" enctype="multipart/form-data">
                       <div class="form-group">
-                        <label for="title" class="col-sm-1 control-label">Title</label>
+                        <label for="title" class="col-sm-1 control-label">标题</label>
                         <div class="col-sm-11">
                           <input class="form-control" id="title" placeholder="title" v-model="post.title">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="categories" class="col-sm-1 control-label">Select categories</label>
+                        <label for="categories" class="col-sm-1 control-label">选择分类</label>
                         <div class="col-sm-11">
                             <multiselect :selected.sync="post.categories.data" :options="options2" :multiple="true"
                             key="hashid" label="name" :on-change="onChangeAction"
@@ -31,13 +31,13 @@
                         </div>
                       </div>
                       <div class="form-group">
-                          <label for="image" class="col-sm-1 control-label">Image</label>
+                          <label for="image" class="col-sm-1 control-label">图片</label>
                           <div class="col-sm-5">
                               <dropzone :model='post.image' :action="'/api/posts/'+postId+'/image'"></dropzone>
                           </div>
                       </div>
                       <div class="form-group">
-                        <label for="description" class="col-sm-1 control-label">Description</label>
+                        <label for="description" class="col-sm-1 control-label">描述</label>
                         <div class="col-sm-11">
                           <input class="form-control" id="description" placeholder="description"
                           v-model="post.description">
@@ -45,10 +45,10 @@
                       </div>
                         <textarea id="mdeditor" name="content"></textarea>
                         <button v-if="isPublished" type="button" @click="publishPost(post)" class="btn btn-lg btn-success btn-flat pull-right">
-                            Publish Post
+                            发布
                         </button>
-                        <button type="button" @click="updatePost(post)" class="btn btn-lg btn-primary btn-flat pull-right">Save Post</button>
-                        <button class="btn btn-danger btn-flat btn-lg"  @click="deletePost(post)">Delete
+                        <button type="button" @click="updatePost(post)" class="btn btn-lg btn-primary btn-flat pull-right">保存</button>
+                        <button class="btn btn-danger btn-flat btn-lg"  @click="deletePost(post)">删除
                         </button>
                     </div>
                 </div>
